@@ -13,6 +13,12 @@ import Foundation
 import Music
 import SwiftUI
 
+public enum MusicBarline: Sendable {
+    case single
+    case double
+    case final
+}
+
 extension MusicBarline: MusicStaffViewElement {
     public func path(in frame: CGRect) -> CGPath {
         let path = CGMutablePath()
